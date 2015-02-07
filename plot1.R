@@ -5,6 +5,7 @@ plot1 <- function() {
   
   df$Global_active_power <- as.numeric(df$Global_active_power)
   
+  
   png("plot1.png")
   with(df, hist(Global_active_power, main="Global Active Power", xlab="Global Active Power (kilowatts)", ylab="Frequency",col="red"))
   dev.off()
